@@ -1,0 +1,24 @@
+# Copy this file to .env and fill in your own values.
+# Nothing in this project is hardcoded - every value below is read at runtime.
+
+# Required: free Gemini API key from https://aistudio.google.com/apikey
+GEMINI_API_KEY=AQ.Ab8RN6KMsSujqa87MHL8h-6liXY7NFImA2mBxGnmjSQRLNM1eg************
+
+# Model used by the ADK agents (any Gemini free-tier model works)
+ADK_MODEL=gemini-3.5-flash-lite
+
+# Optional: a GitHub Personal Access Token (classic or fine-grained) with
+# "repo" scope (or "public_repo" for public repos only, and "contents" write
+# access if you want the app to open pull requests for you).
+# Create one at https://github.com/settings/tokens
+# If left empty, you can still paste a token per-repo from the UI.
+GITHUB_TOKEN= github_pat_11B7Z5BHY0WXLeBOUEWVUJ_********1tqewsS0HsNmTDHg2ymBKpEeZwvB58I7i4iMvxKSwVVFIH6J45CT3SqOXZh************
+
+# Where the SQLite database file is stored
+DATABASE_URL=sqlite:///./docdrift.db
+
+# Where Chroma persists its local vector index
+CHROMA_DIR=./chroma_store
+
+# CORS - the origin your frontend dev server runs on
+FRONTEND_ORIGIN=http://localhost:5173

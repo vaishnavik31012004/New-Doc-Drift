@@ -1,0 +1,21 @@
+# --- Web framework ---
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
+python-multipart>=0.0.9,<1.0.0
+
+# --- Data / DB ---
+sqlalchemy>=2.0.35,<3.0.0
+pydantic>=2.9.2,<3.0.0
+pydantic-settings>=2.5.2,<3.0.0
+python-dotenv>=1.0.1,<2.0.0
+
+# --- GitHub integration ---
+PyGithub>=2.4.0,<3.0.0
+
+# --- Vector store for RAG over docs ---
+chromadb>=0.5.15,<1.0.0
+
+# --- Google Agent Development Kit + Gemini ---
+# The code in agents/pipeline.py uses the ADK 1.x runner/event API.
+google-adk==1.38.0
+google-genai>=2.9,<3
